@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4510782F2795779A00B47674 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510782E2795779A00B47674 /* DetailViewController.swift */; };
+		4547DEF827955D3300CBDD59 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DEF727955D3300CBDD59 /* GlobalConstants.swift */; };
 		456F9FEE27952DD50095E5A1 /* GlobalStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F9FED27952DD50095E5A1 /* GlobalStrings.swift */; };
 		456F9FF027953C570095E5A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F9FEF27953C570095E5A1 /* MainViewController.swift */; };
 		456F9FF227953CAC0095E5A1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F9FF127953CAC0095E5A1 /* MainViewModel.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4510782E2795779A00B47674 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4547DEF727955D3300CBDD59 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		456F9FED27952DD50095E5A1 /* GlobalStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStrings.swift; sourceTree = "<group>"; };
 		456F9FEF27953C570095E5A1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		456F9FF127953CAC0095E5A1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				456F9FED27952DD50095E5A1 /* GlobalStrings.swift */,
+				4547DEF727955D3300CBDD59 /* GlobalConstants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			children = (
 				45F857D1279406160079AEFE /* LoginViewController.swift */,
 				456F9FEF27953C570095E5A1 /* MainViewController.swift */,
+				4510782E2795779A00B47674 /* DetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 				456F9FF027953C570095E5A1 /* MainViewController.swift in Sources */,
 				45F857E72794203A0079AEFE /* AppCoordinator.swift in Sources */,
 				45F857D2279406160079AEFE /* LoginViewController.swift in Sources */,
+				4547DEF827955D3300CBDD59 /* GlobalConstants.swift in Sources */,
 				45F857F02794220B0079AEFE /* Dynamic.swift in Sources */,
 				45F857F22794223E0079AEFE /* LoginViewModel.swift in Sources */,
 				456F9FEE27952DD50095E5A1 /* GlobalStrings.swift in Sources */,
@@ -247,6 +254,7 @@
 				45F857EA279420B20079AEFE /* User.swift in Sources */,
 				456F9FF427953CC30095E5A1 /* DetailViewModel.swift in Sources */,
 				45F857E527941A270079AEFE /* Coordinator.swift in Sources */,
+				4510782F2795779A00B47674 /* DetailViewController.swift in Sources */,
 				45C64C0B279492C30039C7E2 /* UIViewController+Ext.swift in Sources */,
 				456F9FF227953CAC0095E5A1 /* MainViewModel.swift in Sources */,
 			);

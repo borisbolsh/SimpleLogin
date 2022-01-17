@@ -8,7 +8,7 @@ struct UserData {
 }
 
 extension UserData {
-    static var userData = UserData(
+    static var userData = UserData (
         name: "John Doe",
         city: "Mexico",
         email: "john.hoe@mail.com",

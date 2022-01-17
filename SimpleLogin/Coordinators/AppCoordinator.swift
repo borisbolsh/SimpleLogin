@@ -1,7 +1,7 @@
 import UIKit
 
-class AppCoordinator: Coordinator {
-    var navigationController: UINavigationController
+final class AppCoordinator: Coordinator {
+    weak var navigationController: UINavigationController?
     var isLoggedIn: Bool = false
     
     init(navigationController: UINavigationController) {
@@ -17,32 +17,31 @@ class AppCoordinator: Coordinator {
     }
     
     func showLogin() {
-        let vc = LoginViewController()
-        vc.coordinator = self
-        vc.viewModel = LoginViewModel()
-        vc.viewModel!.isLoggedIn = isLoggedIn
-        navigationController.pushViewController(vc, animated: true)
+        let loginVC = LoginViewController(
+            coordinator: self,
+            viewModel: LoginViewModel()
+        )
+
+        navigationController?.pushViewController(loginVC, animated: true)
     }
     
     func showMain(login: String) {
-//        let vc = MainViewController()
-//        let viewModel = MainViewModel()
-//        viewModel.login = login
-//        vc.coordinator = self
-//        vc.viewModel = viewModel
-//        navigationController.viewControllers.removeAll()
-//        navigationController.pushViewController(vc, animated: true)
-        
+        let mainVC = MainViewController(
+            coordinator: self,
+            viewModel: MainViewModel()
+        )
+       
+        navigationController?.pushViewController(mainVC, animated: true)
     }
     
     func showDetail() {
-//        let vc = DetailViewController()
-//        let viewModel = DetailViewModel()
-//        viewModel.model = UserData.userData
-//        vc.coordinator = self
-//        vc.viewModel = viewModel
-//        navigationController.pushViewController(vc, animated: true)
-//
+        let detailVC = DetailViewController(
+            coordinator: self,
+            viewModel: DetailViewModel(),
+            model: UserData.userData
+        )
+
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     
     
